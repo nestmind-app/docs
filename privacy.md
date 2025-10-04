@@ -10,17 +10,23 @@ We believe your data belongs to you — not to us.
 
 ## 1. Data Collection
 
-- **On your device by default:**  
-  Bookmarks, todos, videos/playlists, tags, notes (when available), and local metadata used to organize your content.  
+- **Stored securely in your iCloud account by default:**  
+  NestMind automatically syncs your data using Apple’s iCloud and CloudKit services.  
+  All information — including bookmarks, todos, videos/playlists, tags (when available) — is stored **privately** in your personal iCloud account, linked only to your Apple ID.  
+  NestMind does not maintain external servers or databases containing your data.
 
-- **Optional iCloud/CloudKit Sync:**  
-  If you enable sync, your data is stored securely in your private iCloud account, tied to your Apple ID.  
+- **Local caching:**  
+  A copy of your data is stored on your device to enable offline access.  
+  This cache is encrypted and protected by iOS Data Protection.
 
-- **We do not collect:**  
-  - Personal identifiers or contact details.  
-  - Advertising identifiers.  
-  - Location or analytics data.  
-  - Any content stored in your workspace.  
+- **We do not collect or access:**  
+  - Personal identifiers or contact details  
+  - Advertising identifiers  
+  - Location or analytics data  
+  - Any content you store in your workspace     
+
+Your data remains fully under your control and inside your Apple ecosystem.
+
 
 ---
 
