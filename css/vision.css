@@ -1,0 +1,377 @@
+/* ============================================
+   VISION PAGE STYLES
+   Inspired by Zed.dev/about
+   ============================================ */
+
+/* ============================================
+   VISION HERO
+   ============================================ */
+
+.vision-hero {
+    padding: var(--space-4xl) 0 var(--space-3xl);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.vision-hero-content {
+    max-width: 900px;
+}
+
+.vision-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-lg);
+}
+
+.vision-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-6xl);
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+    .vision-title {
+        font-size: var(--text-4xl);
+    }
+}
+
+/* ============================================
+   VISION SECTIONS
+   ============================================ */
+
+.vision-section {
+    padding: var(--space-4xl) 0;
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-3xl);
+    max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+    .vision-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+}
+
+.vision-sidebar {
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .vision-sidebar {
+        position: static;
+    }
+}
+
+.sidebar-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--color-text-tertiary);
+}
+
+.vision-content {
+    max-width: 700px;
+}
+
+.vision-lead {
+    font-family: var(--font-serif);
+    font-size: var(--text-2xl);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xl);
+}
+
+.vision-text {
+    font-size: var(--text-lg);
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.vision-text strong {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+/* ============================================
+   DIVIDERS (Zed-style diagonal patterns)
+   ============================================ */
+
+.vision-divider {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-xl) 0;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-border);
+}
+
+.divider-pattern {
+    width: 60px;
+    height: 20px;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        var(--color-border),
+        var(--color-border) 1px,
+        transparent 1px,
+        transparent 6px
+    );
+    opacity: 0.8;
+}
+
+/* ============================================
+   PHILOSOPHY CARDS
+   ============================================ */
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    margin-top: var(--space-3xl);
+    max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.philosophy-card {
+    padding: var(--space-xl);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    transition: border-color var(--transition-base) var(--ease-in-out);
+}
+
+.philosophy-card:hover {
+    border-color: var(--color-accent);
+}
+
+.philosophy-number {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+}
+
+.philosophy-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-md);
+    line-height: 1.3;
+}
+
+.philosophy-text {
+    font-size: var(--text-base);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* ============================================
+   PRINCIPLES LIST
+   ============================================ */
+
+.principles-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.principle-item {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.principle-marker {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.principle-content h4 {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.principle-content p {
+    font-size: var(--text-base);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* ============================================
+   VISION CTA
+   ============================================ */
+
+.vision-cta {
+    padding: var(--space-4xl) 0;
+    background-color: var(--color-bg-secondary);
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+}
+
+.vision-cta h2 {
+    font-family: var(--font-serif);
+    font-size: var(--text-4xl);
+    font-weight: 500;
+    margin-bottom: var(--space-md);
+    color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+    .vision-cta h2 {
+        font-size: var(--text-2xl);
+    }
+}
+
+.vision-cta p {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xl);
+}
+
+.vision-cta .cta-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .vision-cta .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ============================================
+   HERO SUBTITLE (tension line)
+   ============================================ */
+
+.vision-hero-subtitle {
+    font-size: var(--text-xl);
+    color: var(--color-text-secondary);
+    margin-top: var(--space-md);
+    margin-bottom: 0;
+}
+
+.vision-hero-subtitle strong {
+    color: var(--color-accent);
+}
+
+/* ============================================
+   PHILOSOPHY ICONS
+   ============================================ */
+
+.philosophy-icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+/* ============================================
+   ORIGIN SIGNATURE
+   ============================================ */
+
+.vision-signature {
+    font-family: var(--font-serif);
+    font-size: var(--text-base);
+    font-style: italic;
+    color: var(--color-text-tertiary);
+    margin-top: var(--space-lg);
+    margin-bottom: 0;
+}
+
+/* ============================================
+   ROADMAP PREVIEW
+   ============================================ */
+
+.roadmap-preview {
+    margin: var(--space-xl) 0;
+    padding: var(--space-lg);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.roadmap-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-md);
+}
+
+.roadmap-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.roadmap-list li {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.roadmap-status {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.roadmap-status.building {
+    background-color: rgba(229, 62, 62, 0.15);
+    color: var(--color-accent);
+}
+
+.roadmap-status.planned {
+    background-color: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+}
+
+.roadmap-status.exploring {
+    background-color: rgba(139, 92, 246, 0.15);
+    color: #8b5cf6;
+}
