@@ -206,6 +206,7 @@ a:hover {
     font-size: var(--text-xl);
     font-weight: 600;
     color: var(--color-text-primary);
+    flex-shrink: 0;
 }
 
 .nav-logo:hover {
@@ -259,6 +260,7 @@ a:hover {
     cursor: pointer;
     padding: var(--space-xs);
     z-index: 1001;
+    flex-shrink: 0;
 }
 
 .mobile-menu-toggle span {
@@ -284,28 +286,52 @@ a:hover {
 
 @media (max-width: 768px) {
     .mobile-menu-toggle {
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 1px solid var(--color-border);
+        border-radius: 10px;
+        background-color: var(--color-bg-secondary);
     }
 
     .nav-links {
+        display: flex;
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 280px;
+        right: 0;
+        width: 85vw;
+        max-width: 320px;
         height: 100vh;
+        height: 100dvh;
         background-color: var(--color-bg-primary);
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 80px var(--space-lg) var(--space-lg);
-        gap: var(--space-md);
+        padding-top: calc(80px + env(safe-area-inset-top));
+        gap: var(--space-xs);
         box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
-        transition: right var(--transition-slow) var(--ease-in-out);
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition:
+            transform var(--transition-slow) var(--ease-in-out),
+            opacity var(--transition-base) var(--ease-in-out),
+            visibility var(--transition-base) var(--ease-in-out);
         z-index: 1000;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-links.active {
-        right: 0;
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
 
     .nav-link {
@@ -328,6 +354,7 @@ a:hover {
         background-color: rgba(0, 0, 0, 0.5);
         opacity: 0;
         visibility: hidden;
+        pointer-events: none;
         transition: all var(--transition-slow) var(--ease-in-out);
         z-index: 999;
     }
@@ -335,6 +362,7 @@ a:hover {
     .mobile-menu-overlay.active {
         opacity: 1;
         visibility: visible;
+        pointer-events: auto;
     }
 }
 
