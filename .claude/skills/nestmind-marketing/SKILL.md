@@ -210,6 +210,18 @@ Secondary: bookmark organizer, AI notes, privacy app, semantic search
 6. **Too many CTAs**: One primary action per page.
 7. **Not showing the unified experience**: Show bookmarks + videos + todos together in one screenshot.
 
+## Post-Processing Pipeline (Mandatory)
+
+After generating any content with this skill, apply these refinements in order:
+
+1. **Writing Style Rules** — Eliminate AI patterns, fix vocabulary, check em-dash usage
+   - See `../writing-style/references/writing-rules.md`
+
+2. **Typographic Sanitizer** — Enforce professional typography, repair fragments, validate output
+   - See `../typographic-sanitizer/SKILL.md`
+
+Both passes are required before any content is considered final.
+
 ## Resources
 
 For detailed examples and templates, see:

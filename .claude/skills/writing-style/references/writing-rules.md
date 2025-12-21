@@ -1,15 +1,6 @@
----
-name: writing-style
-description: Human writing standards to eliminate AI-generated text patterns. Use for any copywriting, marketing content, documentation, or professional writing. Covers banned vocabulary, punctuation rules, sentence structure, and tone guidelines that distinguish human writing from AI output.
----
+# Writing Rules Reference
 
-# Human Writing Standards
-
-## Purpose
-
-AI-generated text has recognizable patterns that erode trust and signal inauthenticity. Professional websites (Zed, Basecamp, Linear, Stripe, Apple) never exhibit these patterns.
-
-This skill defines rules for writing that reads as genuinely human. If someone ran this copy through an AI detector, it should pass. More importantly, it should *feel* like a person wrote it.
+Complete vocabulary lists, punctuation rules, and before/after examples for human-quality writing.
 
 ---
 
@@ -189,14 +180,14 @@ AI produces monotonous sentence patterns. Human writing varies.
 ### AI Pattern (BAD)
 
 ```
-Our product helps you save time. It organizes your files automatically. 
+Our product helps you save time. It organizes your files automatically.
 It uses AI to search semantically. It keeps everything secure on your device.
 ```
 
 ### Human Pattern (GOOD)
 
 ```
-Save time. Our product organizes your files automatically and searches 
+Save time. Our product organizes your files automatically and searches
 by meaning, not just keywords. Everything stays secure on your device.
 ```
 
@@ -223,14 +214,14 @@ AI writing is vague. Human writing is specific.
 ### AI (Vague)
 
 ```
-Our platform offers a comprehensive solution for project management 
+Our platform offers a comprehensive solution for project management
 with cutting-edge AI capabilities that help teams collaborate more effectively.
 ```
 
 ### Human (Specific)
 
 ```
-Track tasks, deadlines, and who's doing what. AI suggests what to 
+Track tasks, deadlines, and who's doing what. AI suggests what to
 work on next based on your priorities. Teams of 5-500 use it daily.
 ```
 
@@ -319,38 +310,16 @@ work on next based on your priorities. Teams of 5-500 use it daily.
 
 ---
 
-## Quick Self-Check Before Publishing
-
-Run through this checklist:
-
-1. **Vocabulary scan**: Ctrl+F for: delve, tapestry, landscape, leverage, robust, seamless, comprehensive, crucial, multifaceted, embark, journey, moreover, furthermore, utilize, foster, showcase
-
-2. **Em-dash count**: More than 2 on the page? Rewrite.
-
-3. **Opening check**: Does it start with "In today's..." or "Whether you're..."? Rewrite.
-
-4. **Colon check**: Does the headline have a colon? Probably remove it.
-
-5. **Vagueness check**: Can you replace "helps you manage" with something specific?
-
-6. **Read aloud**: Does it sound like a person talking, or a press release?
-
-7. **"The" count**: Too many sentences starting with "The [product]..."? Vary it.
-
-8. **Enthusiasm check**: More than one exclamation point? Cut some.
-
----
-
 ## Before/After Examples
 
 ### Example 1: Product Description
 
 **BAD:**
 ```
-In today's fast-paced digital landscape, managing your projects has 
-never been more crucial. Our platform offers a comprehensive, 
-cutting-edge solution—leveraging AI—to help you seamlessly organize, 
-track, and optimize your workflow. Embark on a journey toward 
+In today's fast-paced digital landscape, managing your projects has
+never been more crucial. Our platform offers a comprehensive,
+cutting-edge solution—leveraging AI—to help you seamlessly organize,
+track, and optimize your workflow. Embark on a journey toward
 streamlined productivity.
 ```
 
@@ -358,7 +327,7 @@ streamlined productivity.
 ```
 Track projects without the busywork.
 
-See who's doing what, when it's due, and what's blocking progress. 
+See who's doing what, when it's due, and what's blocking progress.
 AI handles the status updates so you can focus on the work.
 ```
 
@@ -368,9 +337,9 @@ AI handles the status updates so you can focus on the work.
 
 **BAD:**
 ```
-Our robust search functionality leverages cutting-edge natural language 
-processing to deliver a seamless, intuitive experience. This transformative 
-capability allows users to navigate their data effortlessly, unlocking 
+Our robust search functionality leverages cutting-edge natural language
+processing to deliver a seamless, intuitive experience. This transformative
+capability allows users to navigate their data effortlessly, unlocking
 insights that were previously buried in the tapestry of their files.
 ```
 
@@ -378,7 +347,7 @@ insights that were previously buried in the tapestry of their files.
 ```
 Search by meaning, not keywords.
 
-"That doc about the Q3 budget" finds it—even if "budget" isn't in 
+"That doc about the Q3 budget" finds it—even if "budget" isn't in
 the title. Describe what you're looking for. We'll find it.
 ```
 
@@ -388,19 +357,19 @@ the title. Describe what you're looking for. We'll find it.
 
 **BAD:**
 ```
-At [Company], we believe that innovation is paramount. In an era where 
-efficiency and productivity are increasingly vital, it's crucial to 
-choose tools that prioritize your needs. Our comprehensive platform 
-ensures that your data remains secure—always—while fostering 
+At [Company], we believe that innovation is paramount. In an era where
+efficiency and productivity are increasingly vital, it's crucial to
+choose tools that prioritize your needs. Our comprehensive platform
+ensures that your data remains secure—always—while fostering
 collaboration across your organization.
 ```
 
 **GOOD:**
 ```
-We got tired of clunky tools that promise everything and deliver 
+We got tired of clunky tools that promise everything and deliver
 complexity.
 
-So we built something simpler. One place for your team's work. 
+So we built something simpler. One place for your team's work.
 Secure by default. No training required.
 ```
 
@@ -412,10 +381,10 @@ Look at how Zed (zed.dev) writes:
 
 > "We think there's a better way to write code."
 
-> "When you move the cursor or type a character, you should see pixels 
+> "When you move the cursor or type a character, you should see pixels
 > on the next refresh of your display—every time."
 
-> "If you want someone's perspective on a piece of code, it should be 
+> "If you want someone's perspective on a piece of code, it should be
 > as easy as sending a message."
 
 Notice:
