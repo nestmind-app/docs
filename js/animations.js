@@ -230,6 +230,49 @@ rippleStyle.textContent = `
 document.head.appendChild(rippleStyle);
 
 // ============================================
+// MOBILE MENU
+// ============================================
+
+function setupMobileMenu() {
+  const menuToggle = document.querySelector(".mobile-menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  const overlay = document.querySelector(".mobile-menu-overlay");
+
+  if (!menuToggle || !navLinks) return;
+
+  function toggleMenu() {
+    menuToggle.classList.toggle("active");
+    navLinks.classList.toggle("active");
+    if (overlay) overlay.classList.toggle("active");
+    document.body.style.overflow = navLinks.classList.contains("active")
+      ? "hidden"
+      : "";
+  }
+
+  function closeMenu() {
+    menuToggle.classList.remove("active");
+    navLinks.classList.remove("active");
+    if (overlay) overlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  menuToggle.addEventListener("click", toggleMenu);
+  if (overlay) overlay.addEventListener("click", closeMenu);
+
+  // Close menu when a link is clicked
+  navLinks.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  // Close menu on escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navLinks.classList.contains("active")) {
+      closeMenu();
+    }
+  });
+}
+
+// ============================================
 // INITIALIZE ALL ANIMATIONS
 // ============================================
 
@@ -241,6 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupParallaxEffect();
   setupCodeTypingEffect();
   enhanceHoverEffects();
+  setupMobileMenu();
 
   console.log("✨ Factory.ai-inspired animations initialized");
 });
